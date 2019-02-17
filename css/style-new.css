@@ -11,7 +11,7 @@
 .college-logo {
     /* background-image: url("../img/vtmt-logo.png") */
     margin-top: -20px;
-    object-positio
+    /* object-position:  */
     height: 45%;
     width: 45%;
 }
@@ -162,4 +162,18 @@
     color: #f11b0c;
     padding: 5px;
     text-align: right !important;
+  }
+
+  /* responsice code for logo */
+  @media screen and (max-width: 991px) {
+    .event-title {
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+
+    .college-logo {
+      position: block;
+      height: 45%;
+      width: 45%;
+    } 
   }
