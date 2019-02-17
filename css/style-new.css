@@ -165,16 +165,22 @@
     text-align: right !important;
   }
 
-  /* responsice code for logo */
-  @media screen and (max-width: 991px) {
-    .event-title {
-      margin-left: 0px;
-      margin-bottom: 20px;
-    }
-
-    .college-logo {
-      position: block;
-      height: 45%;
-      width: 45%;
-    } 
+/* responsice code for logo */
+@media screen and (max-width: 991px) {
+  .event-title {
+    margin-left: 0px;
+    margin-bottom: 20px;
   }
+
+  .college-logo {
+    position: block;
+    height: 45%;
+    width: 45%;
+  } 
+}
+
+/* pricing box styling */
+
+.price {
+  border: 2px solid #f11b0c !important;
+}
