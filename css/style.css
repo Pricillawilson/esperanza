@@ -548,10 +548,10 @@ body { font-family: 'Open Sans', sans-serif; }
 .tab-info { display: none; }
 .tab-info.active { display: block; }
 .tab-nav-wrapper { margin-bottom: 83px; }
-.nav-tab.style-2 .nav-tab-item { padding: 17px 17px; color: #848484; background: transparent; border: none; border-bottom: 1px solid transparent; }
+.nav-tab.style-2 .nav-tab-item { padding: 17px 17px; color: #848484; background: transparent; border:none; border-bottom: 5px solid transparent; }
 .nav-tab.style-2 .nav-tab-item.active { color: #000; background: transparent; border-bottom: 4px solid #f11b0c; }
 .nav-tab.style-2 .nav-tab-item:hover { color: #000; background: transparent; border-bottom: 4px solid #f11b0c; }
-.shedule-block { position: relative; text-align: center; padding-top: 150px; padding-bottom: 100px; }
+.shedule-block { position: relative; text-align: center; padding-top: 150px; padding-bottom: 100px;border-color: #f11b0c; border-width: 5px }
 .shedule-block:before { content: ''; display: block; position: absolute; top: 0px; left: 50%; bottom: 0px; width: 1px; margin-left: -0.5px; background: #e1e1e1; }
 .shedule-block:after { content: ''; display: block; position: absolute; top: 195px; left: 0px; right: 50%; height: 1px; background: #e1e1e1; z-index: 1; }
 .shedule-block.left:after { left: 8.33333333%; right: 50%; }
