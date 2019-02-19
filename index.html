@@ -12,7 +12,16 @@
 	<link href="css/style-new.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
     <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>ESPERENZA 2K19</title>
+	<title>ESPERANZA 2K19</title>
+	
+	<!-- countdown end time -->
+	<!-- <script>
+		$('.countdown').ClassyCountdown({
+			theme: "flat-colors",
+			now: $.now() / 1000,
+			end: Date.UTC(2019, 2, 2, 9, 0, 0) / 1000
+		});
+	</script> -->
 </head>
 <body data-color="yellow">
 
@@ -40,14 +49,11 @@
 				<div class="top-line-left">
 					<ul>
 						<!-- <a class="logo" href="#"><img src="img/logo_yellow.png" alt=""></a> -->
-						<li><a href="#"><img class="college-logo" src="img/vtmt-logo.png"></a></li>
-						<li><a href="#" class="event-title" style="margin-top: 2.5%;font-family:'True Lies'; color:aliceblue; font-size: 3em; font-weight: 300;">ESPERENZA 2K19</a></li>
+						<li><a href="http://www.veltechmultitech.org/" target="_blank"><img class="college-logo" src="img/vtmt-logo.png"></a></li>
+						<li><a href="#" class="event-title" style="margin-top: 2.5%;font-family:'True Lies'; color:aliceblue; font-size: 3em; font-weight: 300;">ESPERANZA 2K19</a></li>
 					</ul>
 				</div>
-    			<!-- <div class="top-line-left">
-    				<div class="top-contact"><i class="fas fa-envelope"></i><a href="mailto:">esperenza@veltechmultitech.com</a></div>
-    				<div class="top-contact"><i class="fa fa-phone"></i><a href="tal:61402186411">+61 402 186 411</a>, <a href="tal:6166650">+61 66 650</a></div>
-				</div>			 -->
+    			
 				<div class="top-line-right">
 					<ul class="anchor-navigation" style="margin-top:2% !important">
 						<li><a class="anchor-scroll" href="#abou">about</a></li>
@@ -59,25 +65,6 @@
 						<li><a class="anchor-scroll" href="#contact">contact</a></li>
 					</ul>
 				</div>
-    			<!-- <div class="top-line-right">
-    				<div class="top-social">
-    					<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-facebook"></i></a>
-						<a href="#"><i class="fab fa-youtube"></i></a>
-    				</div> -->
-    				<!-- <a class="search-link top-search" href="#"><i class="fa fa-search"></i></a> -->
-                    <!-- <div class="search-popup custom-popup"> -->
-                        <!-- <form> -->
-                            <!-- <div class="popup-close"><i class="fa fa-times"></i></div> -->
-                            <!-- <h3 class="popup-title text-center">Search</h3> -->
-                            <!-- <div class="c-form-group"> -->
-                                <!-- <div class="c-form-label">Enter search text</div> -->
-                                <!-- <input type="text" required="" value=""> -->
-                            <!-- </div> -->
-                            <!-- <input class="c-btn b-50 black hv-yellow-o" type="submit" value="Search"> -->
-                        <!-- </form> -->
-                    <!-- </div>                      -->
-    			</div>                				
 			</nav>
             <button class="cmn-toggle-switch"><span></span></button>
     	</div>
@@ -97,11 +84,11 @@
 	                        		<div class="banner-block style-4">
 										<h3 class="college-text">Veltech Multitech Dr Rangarajan Dr Sakunthala Engineering College</h3>
 										<h3 class="college-text" style="padding-bottom: 2%;">proudly presents</h3>
-										<h2 class="banner-title" style="font-family:'True Lies'">ESPERENZA 2K19</h2>
+										<h2 class="banner-title" style="font-family:'True Lies'">ESPERANZA 2K19</h2>
 										<h4 class="banner-date style-2">2nd March 2019</h4>
 										<div class="banner-btn">
-											<a class="c-btn b-50 blue hv-blue-o" href="#">contact us</a>
-											<a class="register-link c-btn b-50 transparent hv-blue" href="#">register</a>
+											<a class="anchor-scroll c-btn b-50 transparent hv-blue" href="#contact">contact us</a>
+											<a class="anchor-scroll c-btn b-50 blue hv-blue-o" href="#pricing">register</a>
 										</div>
 	                        		</div>
                         		</div>
@@ -110,8 +97,6 @@
                     </div>
                 </div>
                 <div class="pagination"></div>
-				<!-- <div class="swiper-arrow-left style-3"><img src="img/arrow_left_3.png" alt=""></div>  
-				<div class="swiper-arrow-right style-3"><img src="img/arrow_right_3.png" alt=""></div>          -->
             </div>
 
 			<!-- COUNTERS -->
@@ -119,13 +104,21 @@
 	        	<div class="conteiner">
 	        		<div class="counter-title-block">
 	        			<h4 class="counter-title">Time Left:</h4>
-	        			<div class="counter-tilt-desc">Hurry up and register NOW!!!</div>
-	        		</div>
-	        		<div class="counters-block clearfix">
-						<div id="countdown" class="ClassyCountdown" data-style="red"></div>
-	        		</div>				
+						<div class="counter-tilt-desc" style="text-align:center">Hurry up and register NOW!!!</div>
+						<div class="counters-block clearfix">
+							<div class="countdown">
+								<!-- Display the countdown timer in an element -->
+								<p id="countdown" style="text-align:center"></p>
+							</div>
+							
+						</div>	
+					</div>
+					
+	        					
+					
 	        	</div>
-	        </div>              
+			</div>               
+			
         </div>
 
 		<!-- ABOUT -->
@@ -341,7 +334,7 @@
 		<!-- Event description popup box -->
 		<div id="solo_virtuoso" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">SOLO VIRTUOSO</h2><br>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">SOLO VIRTUOSO</h2><br>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 					<blockquote>
@@ -361,7 +354,7 @@
 						<li>Participants should produce their college id card at the time of registration.</li>
 					</ol>
 					<div class="reg-button">
-						<a href="#registrations" class="smoothscroll">Register Now!</a>
+						<a href="#pricing" class="anchor-scroll">Register Now!</a>
 					</div>
 				</div>
 			</div>
@@ -369,7 +362,7 @@
 
 		<div id="solo_nightingale" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">SOLO NIGHTINGALE</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">SOLO NIGHTINGALE</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 						<blockquote><p>
@@ -391,7 +384,7 @@
 						</ol>	
 	
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -399,7 +392,7 @@
 
 		<div id="foot_loose" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">FOOT LOOSE</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">FOOT LOOSE</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 						<p><blockquote>“In a society that worships love, freedom, and beauty, dance is sacred. It is a prayer for the future, a remembrance of the past and a joyful exclamation of thanks for the present.”
@@ -418,7 +411,7 @@
 						
 						
 					    <div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -426,7 +419,7 @@
 
 		<div id="beat_the_street" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">BEAT THE STREET</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">BEAT THE STREET</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 						<p><blockquote>
@@ -448,7 +441,7 @@
 						</ol>
 						
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -456,7 +449,7 @@
 
 		<div id="grupo_musica" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">GRUPO MUSICA</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">GRUPO MUSICA</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 					<blockquote>
@@ -478,7 +471,7 @@
 						</ol>
 					
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -486,7 +479,7 @@
 
 		<div id="capture_it" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">CAPTURE IT!</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">CAPTURE IT!</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 					
@@ -505,7 +498,7 @@
 						</ol>
 					
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -513,7 +506,7 @@
 
 		<div id="film_fest" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">FILM FEST</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">FILM FEST</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 		
@@ -533,7 +526,7 @@
 						</ol>
 					
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -541,7 +534,7 @@
 
 		<div id="pubg" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">PUBG LOOT</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">PUBG LOOT</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 						<h4>ABOUT THE EVENT:</h4><br>
@@ -560,7 +553,7 @@
 						</ol>
 					
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -568,7 +561,7 @@
 
 		<div id="memeazon" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">MEMEAZON</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">MEMEAZON</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 						<h4>ABOUT THE EVENT:</h4><br>
@@ -587,7 +580,7 @@
 						</ol>
 					
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -595,7 +588,7 @@
 
 		<div id="sketch_up" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">SKETCH UP</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">SKETCH UP</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 						<h4>ABOUT THE EVENT:</h4><br>
@@ -614,7 +607,7 @@
 						</ol>
 					
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
@@ -622,7 +615,7 @@
 
 		<div id="grupo_musica" class="overlay">
 			<div class="popup">
-				<h2 class="subhead smoothscroll" style="font-size: 3.5rem;">GRUPO MUSICA</h2>
+				<h2 class="subhead anchor-scroll" style="font-size: 3.5rem;">GRUPO MUSICA</h2>
 				<a class="close" href="#events"><i class="fas fa-times-circle"></i></a>
 				<div class="popup-content">
 					<blockquote>
@@ -644,321 +637,13 @@
 						</ol>
 					
 						<div class="reg-button">
-							<a href="#registrations" class="smoothscroll">Register Now!</a>
+							<a href="#pricing" class="anchor-scroll">Register Now!</a>
 						</div>
 				</div>
 			</div>
-		</div>
+		</div><br>
 
-        <!-- SLIDER WITH THUMBS -->
-        <div id="speakers" class="main-block clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="block-header style-2">
-                            <h4 class="block-category">CHIEF GUESTS</h4>
-                            <!-- <h2 class="block-title">meet our speakers</h2> -->
-                            <!-- <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-wth-thumbs style-2">
-                <div class="swiper-container thumbnails-preview" data-autoplay="0" data-loop="1" data-speed="500" data-center="0" data-slides-per-view="1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide active" data-val="0">
-                        	<div class="speaker-img"><img class="center-image" src="img/slide_10.jpg" alt=""></div>
-                        	<div class="container">
-	                        	<div class="row">
-	                        		<div class="col-xs-12 col-md-5">
-	                        			<div class="speaker-block">
-		                        			<div class="speaker-category">Designation</div>
-		                        			<div class="speaker-title">Name</div>
-		                        			<div class="speaker-text">Description.</div>
-		                        			<!-- <div class="speaker-social clearfix">
-		                        				<a href="#"><i class="fa fa-google-plus"></i></a>
-		                        				<a href="#"><i class="fa fa-facebook"></i></a>
-		                        				<a href="#"><i class="fa fa-twitter"></i></a>
-		                        				<a href="#"><i class="fa fa-linkedin"></i></a>
-		                        				<a href="#"><i class="fa fa-skype"></i></a>
-		                        			</div> -->
-	                        			</div>
-	                        		</div>
-	                        	</div>
-                        	</div>
-                        </div>
-                        <div class="swiper-slide" data-val="1">
-                            <div class="speaker-img"><img class="center-image" src="img/slide_11.jpg" alt=""></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <div class="speaker-block">
-		                        			<div class="speaker-category">Designation</div>        
-                                            <div class="speaker-title">Name</div>
-                                            <div class="speaker-text">Description</div>
-                                            <!-- <div class="speaker-social clearfix">
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-skype"></i></a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-val="2">
-                            <div class="speaker-img"><img class="center-image" src="img/slide_12.jpg" alt=""></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <div class="speaker-block">
-		                        			<div class="speaker-category">Designation</div>      
-                                            <div class="speaker-title">Name</div>
-                                            <div class="speaker-text">Description</div>
-                                            <!-- <div class="speaker-social clearfix">
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-skype"></i></a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-val="3">
-                            <div class="speaker-img"><img class="center-image" src="img/slide_13.jpg" alt=""></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <div class="speaker-block">
-		                        			<div class="speaker-category">Founder holi festivale</div>            
-                                            <div class="speaker-title">Michale Takel</div>
-                                            <div class="speaker-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                                            <!-- <div class="speaker-social clearfix">
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-skype"></i></a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-val="4">
-                            <div class="speaker-img"><img class="center-image" src="img/slide_14.jpg" alt=""></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <div class="speaker-block">
-		                        			<div class="speaker-category">Founder holi festivale</div>          
-                                            <div class="speaker-title">Michale Takel</div>
-                                            <div class="speaker-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                                            <!-- <div class="speaker-social clearfix">
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-skype"></i></a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-val="5">
-                            <div class="speaker-img"><img class="center-image" src="img/slide_15.jpg" alt=""></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <div class="speaker-block">
-		                        			<div class="speaker-category">Founder holi festivale</div>
-                                            <div class="speaker-title">Michale Takel</div>
-                                            <div class="speaker-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                                            <!-- <div class="speaker-social clearfix">
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-skype"></i></a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-val="6">
-                            <div class="speaker-img"><img class="center-image" src="img/slide_16.jpg" alt=""></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <div class="speaker-block">
-		                        			<div class="speaker-category">Designation</div>      
-                                            <div class="speaker-title">Name</div>
-                                            <div class="speaker-text">Description</div>
-                                            <!-- <div class="speaker-social clearfix">
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-skype"></i></a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-val="7">
-                            <div class="speaker-img"><img class="center-image" src="img/slide_17.jpg" alt=""></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-5">
-                                        <div class="speaker-block">
-		                        			<div class="speaker-category">Founder holi festivale</div>
-                                            <div class="speaker-title">Michale Takel</div>
-                                            <div class="speaker-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                                            <!-- <div class="speaker-social clearfix">
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-skype"></i></a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                                                                        
-                    </div>
-                    <div class="pagination"></div>
-                    <div class="swiper-arrow-left style-3"><img src="img/arrow_left_3.png" alt=""></div>
-                    <div class="swiper-arrow-right style-3"><img src="img/arrow_right_3.png" alt=""></div>
-                </div>
-                <div class="swiper-container thumbnails" data-autoplay="0" 
-                data-loop="0" data-speed="500" data-center="0" 
-                data-slides-per-view="responsive" data-mob-slides="3"  data-xs-slides="4" 
-                data-sm-slides="6" data-md-slides="7" data-lg-slides="8" 
-                data-add-slides="8">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide current active" data-val="0">
-                            <img class="img-responsive img-full" src="img/thumb_10.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Name</div>
-                                <div class="thumb-text">Designation</div>
-                            </div>
-                            <div class="thumb-overlay"></div>
-                        </div>
-                        <div class="swiper-slide" data-val="1">
-                            <img class="img-responsive img-full" src="img/thumb_11.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Name</div>
-                                <div class="thumb-text">Designation</div>
-                            </div>                            
-                            <div class="thumb-overlay"></div>                            
-                        </div>
-                        <div class="swiper-slide" data-val="2">
-                            <img class="img-responsive img-full" src="img/thumb_12.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Name</div>
-                                <div class="thumb-text">Designation</div>
-                            </div>                            
-                            <div class="thumb-overlay"></div>                            
-                        </div>
-                        <!-- <div class="swiper-slide" data-val="3">
-                            <img class="img-responsive img-full" src="img/thumb_13.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Sandra Doe</div>
-                                <div class="thumb-text">Project-manager</div>
-                            </div>                            
-                            <div class="thumb-overlay"></div>                            
-                        </div>
-                        <div class="swiper-slide" data-val="4">
-                            <img class="img-responsive img-full" src="img/thumb_14.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Sandra Doe</div>
-                                <div class="thumb-text">Project-manager</div>
-                            </div>                            
-                            <div class="thumb-overlay"></div>                            
-                        </div>
-                        <div class="swiper-slide" data-val="5">
-                            <img class="img-responsive img-full" src="img/thumb_15.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Sandra Doe</div>
-                                <div class="thumb-text">Project-manager</div>
-                            </div>                            
-                            <div class="thumb-overlay"></div>                            
-                        </div>
-                        <div class="swiper-slide" data-val="6">
-                            <img class="img-responsive img-full" src="img/thumb_16.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Sandra Doe</div>
-                                <div class="thumb-text">Project-manager</div>
-                            </div>                            
-                            <div class="thumb-overlay"></div>                            
-                        </div>
-                        <div class="swiper-slide" data-val="7">
-                            <img class="img-responsive img-full" src="img/thumb_17.jpg" alt="">
-                            <div class="thumb-desc">
-                                <div class="thumb-title">Sandra Doe</div>
-                                <div class="thumb-text">Project-manager</div>
-                            </div>                            
-                            <div class="thumb-overlay"></div>                            
-                        </div>                                                                          -->
-                    </div>
-                    <div class="pagination hidden"></div>
-                </div>
-            </div>            
-        </div>
-
-        <!-- BANNER BLOCK -->
-        <!-- <div class="main-block style-3">
-        	<div class="container">
-	        	<div class="row">
-	        		<div class="col-xs-12 col-sm-6">
-	        			<img class="left-banner img-responsive" src="img/left_banner.jpg" alt="">
-	        		</div>
-	        		<div class="col-xs-12 col-sm-6">
-	        			<div class="left-banner-header">
-                            <h4 class="left-banner-category">Interesting info</h4>
-                            <h2 class="left-banner-title">Something That You Don't Know</h2>
-                            <div class="left-banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-
-                            <div class="simple-line-wrapper">
-                            	<div class="sl-block clearfix">
-                            		<a href="#"><img class="sl-img" src="img/sl_1.jpg" alt=""></a>
-                            		<div class="sl-content">
-                            			<a class="sl-title" href="#">Synthetic colours</a>
-                            			<div class="sl-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam.</div>
-                            		</div>
-                            	</div>
-                            	<div class="sl-block clearfix">
-                            		<a href="#"><img class="sl-img" src="img/sl_2.jpg" alt=""></a>
-                            		<div class="sl-content">
-                            			<a class="sl-title" href="#">Environmental impact</a>
-                            			<div class="sl-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam.</div>
-                            		</div>
-                            	</div>
-                            	<div class="sl-block clearfix">
-                            		<a href="#"><img class="sl-img" src="img/sl_3.jpg" alt=""></a>
-                            		<div class="sl-content">
-                            			<a class="sl-title" href="#">Flammability</a>
-                            			<div class="sl-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam.</div>
-                            		</div>
-                            	</div>                            	                            	
-                            </div>
-                        </div>
-	        		</div>
-	        	</div>
-        	</div>
-        </div> -->
-
-
-        <!-- SHEDULE -->
+       <!-- SHEDULE -->
         <div id="schedule" class="main-block bg-grey">
             <div class="container">
                 <div class="row">
@@ -1058,7 +743,7 @@
 		                                    	<h4><a class="shedule-speaker" href="#">Beat the Street</a></h4>
 		                                    	<!-- <div class="shedule-position">Project-manager</div> -->
 	                                    	</div>                                		
-	                                    	<div class="shedule-date">02:00 pm - 02:30 pm</div>
+	                                    	<div class="shedule-date">02:00 pm - 03:30 pm</div>
 	                                    </div>
 	                                    <!-- <div class="shedule-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div> -->
                                     </div>
@@ -1148,425 +833,11 @@
 									</div>
 								</div>                                      
                         </div>
-                        <!-- <div class="tab-info">
-                                        
-                            <div class="shedule-block style-2 left">
-                                <img class="shedule-user" src="img/user_6.jpg" alt="">
-                                <div class="shedule-entry">
-                                	<div class="shedule-content">
-                                		<div class="shedule-header clearfix">
-                                			<div class="shedule-header-left">
-		                                    	<h4><a class="shedule-speaker" href="#">Sandra Doe</a></h4>
-		                                    	<div class="shedule-position">Project-manager</div>
-	                                    	</div>                                		
-	                                    	<div class="shedule-date">19.09.2016<br>9:30 am - 11:30 am</div>
-	                                    </div>
-	                                    <div class="shedule-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                                    </div>
-                                    <img class="img-responsive" src="img/shedule_6.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="shedule-block style-2 right">
-                                <img class="shedule-user" src="img/user_7.jpg" alt="">
-                                <div class="shedule-entry">
-                                	<div class="shedule-content">
-                                		<div class="shedule-header clearfix">
-                                			<div class="shedule-header-left">
-		                                    	<h4><a class="shedule-speaker" href="#">Sandra Doe</a></h4>
-		                                    	<div class="shedule-position">Project-manager</div>
-	                                    	</div>                                		
-	                                    	<div class="shedule-date">19.09.2016<br>9:30 am - 11:30 am</div>
-	                                    </div>
-	                                    <div class="shedule-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                                    </div>
-                                    <img class="img-responsive" src="img/shedule_7.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="shedule-block style-2 left">
-                                <img class="shedule-user" src="img/user_8.jpg" alt="">
-                                <div class="shedule-entry">
-                                	<div class="shedule-content">
-                                		<div class="shedule-header clearfix">
-                                			<div class="shedule-header-left">
-		                                    	<h4><a class="shedule-speaker" href="#">Sandra Doe</a></h4>
-		                                    	<div class="shedule-position">Project-manager</div>
-	                                    	</div>                                		
-	                                    	<div class="shedule-date">19.09.2016<br>9:30 am - 11:30 am</div>
-	                                    </div>
-	                                    <div class="shedule-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                                    </div>
-                                    <img class="img-responsive" src="img/shedule_8.jpg" alt="">
-                                </div>
-                            </div>                                                                                                
-                        </div>                           -->
+                        
                     </div>
                 </div>                
             </div>
         </div>
-
-        <!-- SLIDER-ICONS -->
-		<!-- <div class="main-block style-2" >
-        	<img class="center-image" src="img/bg_2.jpg" alt="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="block-header style-2 color-3">
-                            <h4 class="block-category img-full">Our Musicians</h4>
-                            <h2 class="block-title">best DJs only for you</h2>
-                            <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </div>
-                    </div>
-                </div>
-				<div class="slider-icons swiper-container" data-autoplay="0" data-loop="0" data-speed="1000" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="3" data-md-slides="4" data-lg-slides="5" data-add-slides="5">
-				 	<div class="swiper-wrapper">
-					  	<div class="swiper-slide" data-val="0">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_3.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Alex Crew</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="1">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_4.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj David Guetta</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="2">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_5.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Deadmau5</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="3">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_1.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Gareth Emery</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="4">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_2.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Don Diablo</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="5">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_3.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Alex Crew</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="6">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_4.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj David Guetta</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="7">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_5.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Deadmau5</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="8">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_1.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Gareth Emery</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="9">
-							<div class="icon-item">
-								<img class="icon-img" src="img/icon_2.png" alt="">
-								<div class="icon-date">19.09.2016 / 11:30 am</div>
-								<a class="icon-title">Dj Don Diablo</a>
-								<div class="icon-category">first stage</div>
-							</div>
-					  	</div>					  				  				  
-					  </div>
-					<div class="pagination"></div>
-				</div>                
-            </div>
-        </div> -->
-
-		<!-- NEWS -->
-        <!-- <div class="main-block style-2"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="block-header style-2">
-                            <h4 class="block-category">Latest News</h4>
-                            <h2 class="block-title">interesting news</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-wrapper row">
-                	<div class="news-entry col-xs-12 col-sm-6 col-md-4">
-                		<div class="news type-1 facebook">
-                			<h4><a class="news-title" href="#">Intel, Rackspace to Build Beachhead for OpenStack’s Next Phase in Texas</a></h4>
-                			<div class="news-date"><i class="fa fa-calendar"></i> 20 July 2016</div>
-                			<a class="news-type" href="#"><i class="fa fa-facebook"></i></a>
-                			<div class="news-likes">
-                				<a href="#"><i class="fa fa-thumbs-o-up"></i> 980</a>
-                				<a href="#"><i class="fa fa-comment-o"></i> 79</a>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="news-entry col-xs-12 col-sm-6 col-md-4">
-                		<div class="news type-2">
-                			<img class="img-responsive" src="img/news_3.jpg" alt="">
-                			<div class="news-desc">
-                				<h4><a class="news-title" href="#">OpenStack’s Next Phase in Texas</a></h4>
-                				<div class="news-date"><i class="fa fa-calendar"></i> 20 July 2016</div>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="news-entry col-xs-12 col-sm-6 col-md-4">
-                		<div class="news type-1 twitter">
-                			<h4><a class="news-title" href="#">Intel, Rackspace to Build Beachhead for OpenStack’s Next Phase in Texas Dropbox Acquires Enterprise </a></h4>
-                			<div class="news-date"><i class="fa fa-calendar"></i> 20 July 2016</div>
-                			<a class="news-type" href="#"><i class="fa fa-facebook"></i></a>
-                			<div class="news-likes">
-                				<a href="#"><i class="fa fa-thumbs-o-up"></i> 980</a>
-                				<a href="#"><i class="fa fa-star-o"></i> 79</a>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="news-entry col-xs-12 col-sm-6 col-md-4">
-                		<div class="news type-2">
-                			<img class="img-responsive" src="img/news_4.jpg" alt="">
-                			<div class="news-desc">
-                				<h4><a class="news-title" href="#">The Open Container Initiative Adds</a></h4>
-                				<div class="news-date"><i class="fa fa-calendar"></i> 20 July 2016</div>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="news-entry col-xs-12 col-sm-6 col-md-4">
-                		<div class="news type-1 twitter">
-                			<h4><a class="news-title" href="#">Next Phase In Texas Dropbox Acquires</a></h4>
-                			<div class="news-date"><i class="fa fa-calendar"></i> 20 July 2016</div>
-                			<a class="news-type" href="#"><i class="fa fa-facebook"></i></a>
-                			<div class="news-likes">
-                				<a href="#"><i class="fa fa-thumbs-o-up"></i> 980</a>
-                				<a href="#"><i class="fa fa-star-o"></i> 79</a>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="news-entry col-xs-12 col-sm-6 col-md-4">
-                		<div class="news type-1 facebook">
-                			<h4><a class="news-title" href="#">Alibaba Cloud Division Aliyun Shares loud Privacy Commitment as it Vies for Global Business</a></h4>
-                			<div class="news-date"><i class="fa fa-calendar"></i> 20 July 2016</div>
-                			<a class="news-type" href="#"><i class="fa fa-facebook"></i></a>
-                			<div class="news-likes">
-                				<a href="#"><i class="fa fa-thumbs-o-up"></i> 980</a>
-                				<a href="#"><i class="fa fa-comment-o"></i> 79</a>
-                			</div>
-                		</div>
-                	</div>              	                	
-                </div>
-                <div class="more-block">
-                	<a class="c-btn b-50 yellow hv-yellow-t" href="#">load more posts</a>
-                </div>
-            </div>
-        </div>      -->          
-
-
-        <!-- TESTIMONALS -->
-        <!-- <div id="testimonials" class="main-block style-2 bg-grey"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="block-header style-2">
-                            <h4 class="block-category">Testimonials</h4>
-                            <h2 class="block-title">What People Say About Us</h2>
-                            <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-container" data-autoplay="0" data-initial-slide="1" data-loop="0" data-speed="500" data-center="1" data-slides-per-view="auto">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-val="0">
-                        <div class="testimonals style-2">
-                            <img class="center-image" src="img/testimonals_2.jpg" alt="">
-                            <div class="testimonals-desc">
-                                <div class="testimonals-title">Claire Mccoy</div>
-                                <div class="testimonals-position">Head of design team</div>
-                                <div class="testimonals-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-val="1">
-                        <div class="testimonals style-2">
-                            <img class="center-image" src="img/testimonals_3.jpg" alt="">
-                            <div class="testimonals-desc">
-                                <div class="testimonals-title">Claire Mccoy</div>
-                                <div class="testimonals-position">Head of design team</div>
-                                <div class="testimonals-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </div>                            
-                        </div>             
-                    </div>
-                    <div class="swiper-slide" data-val="2">
-                        <div class="testimonals style-2">
-                            <img class="center-image" src="img/testimonals_2.jpg" alt="">
-                            <div class="testimonals-desc">
-                                <div class="testimonals-title">Claire Mccoy</div>
-                                <div class="testimonals-position">Head of design team</div>
-                                <div class="testimonals-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </div>                             
-                        </div>                 
-                    </div>
-                    <div class="swiper-slide" data-val="3">
-                        <div class="testimonals style-2">
-                            <img class="center-image" src="img/testimonals_3.jpg" alt="">
-                            <div class="testimonals-desc">
-                                <div class="testimonals-title">Claire Mccoy</div>
-                                <div class="testimonals-position">Head of design team</div>
-                                <div class="testimonals-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </div>                             
-                        </div>                
-                    </div>
-                    <div class="swiper-slide" data-val="4">
-                        <div class="testimonals style-2">
-                            <img class="center-image" src="img/testimonals_2.jpg" alt="">
-                            <div class="testimonals-desc">
-                                <div class="testimonals-title">Claire Mccoy</div>
-                                <div class="testimonals-position">Head of design team</div>
-                                <div class="testimonals-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </div>                             
-                        </div>                
-                    </div>                        
-                </div>
-                <div class="pagination hidden"></div>
-            </div> 
-        </div>
-
-        GALLERY
-        <div id="gallery" class="main-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="block-header style-2">
-                            <h4 class="block-category img-full">Gallery</h4>
-                            <h2 class="block-title">photos of our events</h2>
-                            <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </div>
-                    </div>
-                </div>
-				<div class="gallery-wrapper isotope-container">
-					<div class="grid-sizer col-xs-12 col-sm-3"></div>
-					<div class="item col-xs-12 col-sm-6">
-						<a class="gal-item lightbox" href="img/gal_11.jpg">
-							<img class="img-responsive img-full" src="img/gal_11.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_12.jpg">
-							<img class="img-responsive img-full" src="img/gal_12.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_13.jpg">
-							<img class="img-responsive img-full" src="img/gal_13.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-					<div class="item col-xs-12 col-sm-6">
-						<a class="gal-item lightbox" href="img/gal_14.jpg">
-							<img class="img-responsive img-full" src="img/gal_14.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_15.jpg">
-							<img class="img-responsive img-full" src="img/gal_15.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_16.jpg">
-							<img class="img-responsive img-full" src="img/gal_16.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-					<div class="item col-xs-12 col-sm-6">
-						<a class="gal-item lightbox" href="img/gal_17.jpg">
-							<img class="img-responsive img-full" src="img/gal_17.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>				    
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_18.jpg">
-							<img class="img-responsive img-full" src="img/gal_18.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_19.jpg">
-							<img class="img-responsive img-full" src="img/gal_19.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_20.jpg">
-							<img class="img-responsive img-full" src="img/gal_20.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div>
-
-					<div class="item col-xs-12 col-sm-3">
-						<a class="gal-item small lightbox" href="img/gal_21.jpg">
-							<img class="img-responsive img-full" src="img/gal_21.jpg" alt="event 2014">
-							<div class="gal-desc">
-								<div class="gal-title">event 2014</div>
-							</div>
-						</a>
-				    </div> 				 		
-				</div>
-				<div class="more-block">
-                	<a class="c-btn b-50 yellow hv-yellow-t" href="#">load more photos</a>
-                </div>               
-           	</div>
-        </div> -->
 
 		<!-- PRICE -->
         <div id="pricing" class="main-block style-2">
@@ -1598,30 +869,11 @@
                 					<p>Beat the Street</p>
                 					<p>Groupo Musica</p>
                 				</div>
-								<a class="register-link c-btn b-50 yellow-2 hv-yellow" href="#">register</a>
+								<a class="c-btn b-50 yellow-2 hv-yellow" href="https://goo.gl/forms/NbhpgKKiqPu7Be6c2" target="_blank">register</a>
                 			</div>
                 		</div>
                 	</div>
-                	<!-- <div class="no-padding col-xs-12 col-sm-4"> 
-                		<div class="price style-2 center">
-                			<div class="price-top">
-                				<h4 class="price-title">MINI EVENTS</h4>
-                				<div class="price-category">Get the basic</div> 
-                				<img class="price-img img-responsive" src="" alt="">
-                				<div class="price-per">$$$.00<sup>$</sup><sub>/per</sub></div>
-                				 <div class="price-desc">Lorem ipsum  adipiscing elit, sed do eiusmod incididunt ut labore.</div> 
-                			</div>
-                			<div class="price-bottom">
-                				 <div class="price-row">
-                					<p>Seat and free entry</p>
-                					<p>Lorem ipsum dolor sit</p>
-                					<p>Adipiscing sed eiusmod </p>
-                					<p>Incididunt ut labore</p>
-                				</div> 
-								<a class="register-link c-btn b-50 yellow hv-yellow-t" href="#">register</a>
-                			</div>
-                		</div>
-					</div>-->
+                	
 					<div class="col-sm-2"></div>
                 	 <div class="no-padding col-xs-12 col-sm-5"> 
                 		<div class="price style-2 right">
@@ -1640,7 +892,7 @@
                 					<p>Memeazon</p>
                 					<p>Sketch Up and more...</p>
                 				</div>
-								<a class="register-link c-btn b-50 yellow-2 hv-yellow" href="#">register</a>
+								<a class="c-btn b-50 yellow-2 hv-yellow" href="https://goo.gl/forms/NbhpgKKiqPu7Be6c2" target="_blank">register</a>
                 			</div>
                 		</div>
 					</div>  
@@ -1648,161 +900,7 @@
                 </div>
            	</div>
         </div>
-
-		<!-- VIDEO -->
-        <!-- <div class="main-block style-2">
-        	<img class="center-image" src="img/bg_3.jpg" alt="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="block-header style-2 color-3">
-                            <h4 class="block-category img-full">Video Collection</h4>
-                            <h2 class="block-title">video conference 2014</h2>
-                            <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </div>
-                    </div>
-                </div>
-
-				<div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="1000" data-slides-per-view="1" data-add-slides="2">
-				 	<div class="swiper-wrapper">
-					  	<div class="swiper-slide" data-val="0">
-			                <div class="video style-2">
-			                	<img class="img-responsive img-full" src="img/video_2.jpg" alt="">
-			                	<a class="play-btn" data-video="http://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1" href="#"><span class="play-icon"></span></a>
-			                    <div class="movie">
-			                        <iframe src="about:blank" class=""></iframe>
-			                        <div class="close-button">
-			                            <i class="fa fa-times"></i>
-			                        </div>                      
-			                    </div>                    
-			                </div>
-			                <div class="video-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="1">
-			                <div class="video style-2">
-			                	<img class="img-responsive img-full" src="img/video_2.jpg" alt="">
-			                	<a class="play-btn" data-video="http://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1" href="#"><span class="play-icon"></span></a>
-			                    <div class="movie">
-			                        <iframe src="about:blank" class=""></iframe>
-			                        <div class="close-button">
-			                            <i class="fa fa-times"></i>
-			                        </div>                      
-			                    </div>                    
-			                </div>
-			                <div class="video-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</div>			                
-					  	</div>
-					  	<div class="swiper-slide" data-val="2">
-			                <div class="video style-2">
-			                	<img class="img-responsive img-full" src="img/video_2.jpg" alt="">
-			                	<a class="play-btn" data-video="http://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1" href="#"><span class="play-icon"></span></a>
-			                    <div class="movie">
-			                        <iframe src="about:blank" class=""></iframe>
-			                        <div class="close-button">
-			                            <i class="fa fa-times"></i>
-			                        </div>                      
-			                    </div>                    
-			                </div>
-			                <div class="video-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</div>			                
-					  	</div>
-					  	<div class="swiper-slide" data-val="3">
-			                <div class="video style-2">
-			                	<img class="img-responsive img-full" src="img/video_2.jpg" alt="">
-			                	<a class="play-btn" data-video="http://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1" href="#"><span class="play-icon"></span></a>
-			                    <div class="movie">
-			                        <iframe src="about:blank" class=""></iframe>
-			                        <div class="close-button">
-			                            <i class="fa fa-times"></i>
-			                        </div>                      
-			                    </div>                    
-			                </div>
-					  	</div>
-					  	<div class="swiper-slide" data-val="4">
-			                <div class="video style-2">
-			                	<img class="img-responsive img-full" src="img/video_2.jpg" alt="">
-			                	<a class="play-btn" data-video="http://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1" href="#"><span class="play-icon"></span></a>
-			                    <div class="movie">
-			                        <iframe src="about:blank" class=""></iframe>
-			                        <div class="close-button">
-			                            <i class="fa fa-times"></i>
-			                        </div>                      
-			                    </div>                    
-			                </div>
-			                <div class="video-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</div>			                
-					  	</div>			  				  
-					  </div>
-					<div class="pagination"></div>
-				</div>  
-
-
-            </div>
-        </div> -->
-
-		<!-- SPONSORS -->
-        <div id="partners" class="main-block style-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                        <div class="block-header style-2">
-                            <h4 class="block-category img-full">Don’t Forget</h4>
-                            <h2 class="block-title">our sponsors</h2>
-                            <!-- <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="sponsor-wrapper row no-margin">
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry green">
-							<img src="img/sponsor_1.png" alt="">
-                		</div>
-                	</div>
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry white">
-							<img src="img/sponsor_2.png" alt="">
-                		</div>
-                	</div>
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry blue">
-							<img src="img/sponsor_3.png" alt="">
-                		</div>
-                	</div>
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry white">
-							<img src="img/sponsor_4.png" alt="">
-                		</div>
-                	</div>
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry white">
-							<img src="img/sponsor_5.png" alt="">
-                		</div>
-                	</div>
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry red">
-							<img src="img/sponsor_6.png" alt="">
-                		</div>
-                	</div>
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry white">
-							<img src="img/sponsor_7.png" alt="">
-                		</div>
-                	</div>                	                 	         
-                	<div class="no-padding col-xs-6 col-md-3">
-                		<div class="sponsor-entry lightblue">
-							<img src="img/sponsor_8.png" alt="">
-                		</div>
-                	</div>                	                	
-                </div>
-				<!-- <div class="more-block"> 
-					<div class="row">
-						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-							<div class="more-title">Are You Ready To Joing Us Right Now?</div>
-							<div class="more-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris esse cillum fugiat nulla pariatur.</div>
-		                	<a class="c-btn b-50 yellow hv-yellow-t" href="#">ready work with us</a>							
-						</div>
-					</div>
-                </div>  -->              
-            </div>
-        </div>
-
+		
 		<div id="contact" class="contact-block bg-dark">
             <div class="map-block" id="map-canvas" data-marker="img/location-marker.png" data-lat="13.189793" data-lng="80.106414" data-zoom="11" data-style="style-1"></div>
             <div class="addresses-block">
@@ -1820,14 +918,12 @@
     	            					<div class="contact-catagory">Contact Info</div>
 										<div class="contact-title">contact us</div>
     	            					<div class="contact-row">
-    	            						<p><i class="fas fa-map-marker-alt"></i> 42, Alamathi Road, Avadi, Thiruvallur, Chennai, Tamil Nadu 600062</p>
-    	            						<p><i class="far fa-envelope"></i><a href="mailto:nrgevent@nrg.com">nrgevent@nrg.com</a></p>
-											<p> <i class="fas fa-phone"></i> SHAHA +91 90924 60395<br><br>
-												<i class="fas fa-phone"></i> SIVASANKAR +91 96594 52400<br><br>
-												<i class="fas fa-phone"></i> LEYANDER +91 97917 68261<br><br>
-												<i class="fas fa-phone"></i> DHANUSH +91 96001 48357
-																																		
-											</p>
+											<p><i class="fas fa-map-marker-alt"></i> 42, Alamathi Road, Avadi, Thiruvallur,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chennai, Tamil Nadu 600062</p>
+											<p><i class="far fa-envelope"></i><a href="mailto:esperanza.multitech@gmail.com"> esperanza.multitech@gmail.com</a></p>
+											<p> <i class="fas fa-phone"></i> SHAHA +91 90924 60395</p>
+											<p> <i class="fas fa-phone"></i> SIVASANKAR +91 96594 52400</p>
+											<p>	<i class="fas fa-phone"></i> LEYANDER +91 97917 68261</p>
+											<p>	<i class="fas fa-phone"></i> DHANUSH +91 96001 48357</p>
     	            					</div>
                                     </div>
 	            				</div>
@@ -1835,10 +931,11 @@
                                      <div class="s-contact">
     	            					<div class="contact-catagory style-2">Instagram</div>
     	            					<div class="contact-title">Our Insta Page</div>
-    	            					<div class="twitter-row">
-    	            						<p><i class="fab fa-twitter"></i> <span>@faq</span> vestibulum accumsan est malesuada sem auctor, eu aliquet nisi</p>
+    	            					<div class="insta-row col-sm-12">
+											<a href="https://www.instagram.com/esperanza_2kl9?r=nametag" target="_blank"><i style="font-size:7em;" class="fab fa-instagram fa-7x"></i></a>
+    	            						<!-- <p><i class="fab fa-twitter"></i> <span>@faq</span> vestibulum accumsan est malesuada sem auctor, eu aliquet nisi</p>
     	            						<p><i class="fab fa-twitter"></i> <span>@faq</span> suspendisse id pharetra lacus, et hendrerit mi. Praesent at tortor.</p>	            						
-    	            						<p><i class="fab fa-twitter"></i> <span>@faq</span> donec volutpat enim at interdum pretium. Vestibulum ante ipsum</p>	            						
+    	            						<p><i class="fab fa-twitter"></i> <span>@faq</span> donec volutpat enim at interdum pretium. Vestibulum ante ipsum</p>	            						 -->
     	            					</div>
                                     </div>
 	            				</div>	            				
@@ -1855,12 +952,12 @@
     <footer class="footer">
     	<div class="container">
 			<!-- <img class="f-logo" src="img/footer_yellow.png" alt=""> -->
-			<a href="#" class="f-logo" style="margin-top: 2.5%; font-family:'True Lies'; color:aliceblue; font-size: 1.5em; font-weight: 100;">ESPERENZA 2K19</a>
-    		<div class="copy">© 2019 All rights reserved. ESPERENZA 2K19</div>
+			<a href="#" class="f-logo" style="margin-top: 2.5%; font-family:'True Lies'; color:aliceblue; font-size: 1.5em; font-weight: 100;">ESPERNZA 2K19</a>
+    		<div class="copy">© 2019 All rights reserved. ESPERANZA 2K19</div>
     	</div>
     </footer>
 
-	<div class="register-popup custom-popup">
+	<!-- <div class="register-popup custom-popup">
 		<form>
 			<div class="popup-close"><i class="fa fa-times"></i></div>
 			<h3 class="popup-title">Register new account</h3>
@@ -1886,9 +983,10 @@
 			</div>
 			<input class="c-btn b-50 black hv-yellow-o" type="submit" value="Register">
 		</form>
-	</div>    
+	</div>     -->
 
-    <script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/countdown.js"></script>
     <script src="js/idangerous.swiper.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/imagelightbox.min.js"></script>

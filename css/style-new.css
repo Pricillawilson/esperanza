@@ -184,3 +184,26 @@
 .price {
   border: 2px solid #f11b0c !important;
 }
+
+.contact-entry .insta-row a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.contact-entry .insta-row a i {
+margin: 0 auto !important;
+}
+
+.contact-entry .insta-row a i:hover {
+  color: #f11b0c;
+}
+
+/* Counter */
+.countdown p {
+  color: #f11b0c;
+  text-align: center;
+  padding: 5px;
+  font-size: 3em;
+  font-weight: bolder;
+}
