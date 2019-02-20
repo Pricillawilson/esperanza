@@ -207,3 +207,7 @@ margin: 0 auto !important;
   font-size: 3em;
   font-weight: bolder;
 }
+
+.instagram-media {
+  min-width: 200px !important;
+}
