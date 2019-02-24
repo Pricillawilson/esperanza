@@ -1,5 +1,14 @@
 @font-face { font-family: True Lies; src: url('fonts/true-lies.ttf'); }
 
+/* * {
+   padding: 0; margin: 0;
+}
+
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+} */
+
 .college-text {
     color:#eee;
     font-size: 2em;
@@ -208,6 +217,12 @@ margin: 0 auto !important;
   font-weight: bolder;
 }
 
+.s-content {
+  align-items: center;
+}
+
 .instagram-media {
   min-width: 200px !important;
+  max-width: 725px !important;
+  max-height: 400px !important;
 }
