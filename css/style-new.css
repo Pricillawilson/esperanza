@@ -1,4 +1,5 @@
 @font-face { font-family: True Lies; src: url('fonts/true-lies.ttf'); }
+@font-face { font-family: Silver Pen; src: url('fonts/Silver-Pen.ttf'); }
 
 /* * {
    padding: 0; margin: 0;
@@ -186,6 +187,13 @@ html, body {
     height: 45%;
     width: 45%;
   } 
+
+}
+
+@media screen and (max-width: 392px) {
+  #presents {
+    font-size: 3em !important;
+  }
 }
 
 /* pricing box styling */
